@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul.navegacion li{
+    background-color: pink;
+    list-style-type: none;
+}
+
+ul.navegacion li a{
+    text-decoration: none;
+    background-color: pink;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.logochoux{
+    width: 200px;
+    height: auto;
+}
+
+footer.pie div{
+    background-color: pink;
+}
