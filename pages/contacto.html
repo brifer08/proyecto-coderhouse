@@ -11,105 +11,90 @@
 
 <body>
     <!--el codigo que representa mi wireframe-->
-    <header> 
-        <nav> 
-            <ul class="navegacion">
-                <li><a href="./la_pasteleria.html">la pasteleria</a></li>
-                <li><a href="./cositas_dulces_y_saladas.html">cositas dulces y saladas</a></li>
+    <header>
+        <nav>
+            <div class="navegacion">
+                <p class="pasteleria"><a href="./la_pasteleria.html">la pasteleria</a></p>
+                <p class="dulces-saladas"><a href="./cositas_dulces_y_saladas.html">cositas dulces y saladas</a></p>
                 <a href="../index.html">
                     <img class="logochoux" src="../img/logo_choux.png" alt="logo">
-                </a>
-                <li><a href="./servicios.html">servicios</a></li>
-                <li><a href="./contacto.html">contacto</a></li>
-            </ul>
+                <p class="servicios"><a href="./servicios.html">servicios</a></p>
+                <p class="contacto"><a href="./contacto.html">contacto</a></p>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Contactanos</h2>
-            <form action="">
-                <div>
-                    <label for="">Nombre y Apellido</label>
-                    <input type="text" name="" id="">
-                </div>
-                <div>
-                    <label for="">Mail</label>
-                    <input type="email" name="" id="">
-                </div>
-                <div>
-                    <label for="">Consulta</label>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Escriba aquí..."></textarea>
-                </div>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Reset">
-                
-            </form>
-        </section>
-
-    <div>
-        <h2>Dirección</h2>
-        <img src="" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aut sequi iure. Soluta ut eveniet dignissimos dolore tempore necessitatibus, voluptatibus qui eos corrupti natus. Libero facilis molestiae laudantium sint aut!</p>
-        <ul>
-            <li>Telefono: --------</li>
-            <li>Mail: ----------@hotmail.com</li>
-            <li>Horarios de Atención:</li>
-            <li>Martes a Sabados:</li>
-            <li>7:00 hs a 13:00 hs y 16:00 hs a 21:00 hs</li>
-            <li>Domingos:</li>
-            <li>8:00 hs a 13:00 hs y 16:00 hs a 21:00 hs</li>
-        </ul>
-    </div>
-    <div>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
+        <div class="titulo-contacto">
+            <h1>Contacto</h1>
+        </div>
+        <div class="contacto-cuerpo">
+            <div class="contacto-lugar">
+                <h2>Nuestro lugar</h2>
+                <iframe width="320" height="200" src="https://www.youtube.com/embed/ZzGTcmii2j8?si=Zdh9fDP4M_7ZR3wQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <ul>
+                    <li>Telefono: --------</li>
+                    <li>Mail: ----------@hotmail.com</li>
+                    <li>Horarios de Atención:</li>
+                    <li>Martes a Sabados:</li>
+                    <li>7:00 hs a 13:00 hs y 16:00 hs a 21:00 hs</li>
+                    <li>Domingos:</li>
+                    <li>8:00 hs a 13:00 hs y 16:00 hs a 21:00 hs</li>
+                </ul>
+            </div>
+            <section class="contactanos-orden">
+                <h2>Contactanos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aut sequi iure. Soluta ut eveniet dignissimos dolore tempore necessitatibus, voluptatibus qui eos corrupti natus. Libero facilis molestiae laudantium sint aut!</p>
+                <form action="">
+                    <div>
+                        <label for="">Nombre y Apellido</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div>
+                        <label for="">Mail</label>
+                        <input type="email" name="" id="">
+                    </div>
+                    <div>
+                        <label for="">Consulta</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Escriba aquí..."></textarea>
+                    </div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Reset">
+                    
+                </form>
+            </section>
+        </div>
     </main>
 
     <footer class="pie">
-        <div>
-            <ul>
-                <li>Dirección: ............</li>
-                <li>Telefono: ---------</li>
-                <li>Mail: --------@hotmail.com</li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li>Trabaja con nosotros</li>
-                <li>Recetas</li>
-                <li>Politica de privacidad</li>
-            </ul>
-        </div>
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.3197879122076!2d-58.529646423540214!3d-34.54545775442498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb736bef0bed3%3A0x6426ad88095f7946!2sJ%20M%20Campos%20593%2C%20San%20Andres%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1703687467686!5m2!1ses!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div>
-            <p>2023 Todos los derechos reservados.Copyright. Desarrollo web: CoderCurso.Desafio</p>
-        </div>
+        <section class="footer-contacto">
+            <div class="fc1">
+                <div>
+                    <ul class="footer-lista-uno">
+                        <li>Dirección: ............</li>
+                        <li>Telefono: ---------</li>
+                        <li>Mail: --------@hotmail.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="footer-lista-dos">
+                        <li>Trabaja con nosotros</li>
+                        <li>Recetas</li>
+                        <li>Politica de privacidad</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fc2">
+                <div>
+                    <iframe class="mapita"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.3197879122076!2d-58.529646423540214!3d-34.54545775442498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb736bef0bed3%3A0x6426ad88095f7946!2sJ%20M%20Campos%20593%2C%20San%20Andres%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1703687467686!5m2!1ses!2sar"width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="footer-derechos">
+                    <p class="abajo">2023 Todos los derechos reservados.Copyright. Desarrollo web: CoderCurso.Desafio</p>
+                </div>
+            </div>
+        </section>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
     <!--el codigo que representa mi wireframe de inicio-->
 
 </body>

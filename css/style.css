@@ -4,24 +4,419 @@
     box-sizing: border-box;
 }
 
-ul.navegacion li{
-    background-color: pink;
-    list-style-type: none;
+/* css barra de navegacion */ 
+
+.navegacion{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    background-color: #cab4c4;;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
 }
 
-ul.navegacion li a{
+.navegacion a{
     text-decoration: none;
-    background-color: pink;
-    margin: 5px;
-    padding: 5px;
-    display: inline-block;
+}
+
+.pasteleria{
+    background-color: #cab4c4;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.dulces-saladas{
+    background-color: #cab4c4;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
 }
 
 .logochoux{
-    width: 200px;
-    height: auto;
+    height: 110px;
+    width: 110px;
 }
 
-footer.pie div{
-    background-color: pink;
+.servicios{
+    background-color: #cab4c4;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.contacto{
+    background-color: #cab4c4;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+/* css main */
+
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+main div p{
+    text-align: center;
+    margin: 10px;
+}
+
+.secciones{
+    display: flex;
+    margin: 10px;
+
+}
+
+.secciones div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secciones div p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.texto-cafe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.foto-cafe{
+    align-items: center;
+}
+
+.imagen-cafeteria{
+    width: 400px;
+}
+
+.seccion-cafeteria{
+    display: flex;
+    gap: 15px;
+    margin: 10px;
+}
+
+.seccion-sandwicheria{
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
+    margin: 10px;
+}
+
+.imagen-sandwicheria{
+    width: 400px;
+    height: 260px;
+}
+
+.texto-sandwicheria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+}
+
+/* css footer */ 
+
+footer{
+    background-color: #446c95;
+}
+
+.footer-uno{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,0.2fr);
+    grid-template-areas: 
+    "footer-lista-uno footer-lista-dos mapita"
+    "footer-derechos footer-derechos footer-derechos";
+    margin: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-lista-uno{
+    line-height: 3rem;
+    grid-area: footer-lista-uno;
+    color: #cab4c4;
+}
+
+.footer-lista-dos{
+    line-height: 3rem;
+    grid-area: footer-lista-dos;
+    color: #cab4c4;
+}
+
+.mapita{
+    margin: 15px;
+}
+
+.footer-derechos{
+    text-align: center;
+    grid-area: footer-derechos;
+    color: #cab4c4;
+}
+
+/*css html la pasteleria*/
+
+.titulo-pasteleria{
+    display: block;
+    text-align: center;
+    margin: 10px;
+    border: 3px solid #8ba9c5;
+}
+
+.main-pasteleria{
+    display: flex;
+    margin: 30px 10px;
+    gap: 10px;
+}
+
+.main-texto-pasteleria{
+    text-align: center;
+}
+
+.seccion-pasteleria-uno{
+    display: flex;
+    gap: 10px;
+    margin: 30px 10px;
+}
+
+.seccion-texto-pasteleria{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.seccion-titulo-dos{
+    text-align: center;
+}
+
+.seccion-pasteleria-dos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    column-gap: 10px;
+    margin-top: 20px;
+}
+
+.seccion-texto-pasteleria-dos{
+    text-align: center;
+}
+
+/*css cositas dulces*/
+
+.titulo-cositas{
+    display: block;
+    text-align: center;
+    margin: 10px;
+    border: 3px solid #8ba9c5;
+}
+
+main div p{
+    text-align: center;
+    margin: 15px;
+}
+
+.imagen-cositas{
+    width: 200px;
+    height: 200px;
+    display: block;
+
+}
+
+.seccion-cositas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 20px 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.seccion-cositas div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.seccion-cositas p{
+    text-align: center;
+}
+
+/*css servicios*/
+
+.titulo-servicios{
+    display: block;
+    text-align: center;
+    margin: 10px;
+    border: 3px solid #8ba9c5;
+}
+
+.contenedor-principal-main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 2fr 2fr 0.5fr 4fr;
+    grid-template-areas:
+    "texto texto"
+    "dulce dulce"
+    "salado salado"
+    "texrico texrico"
+    "mas masrico";
+    gap: 10px;
+}
+
+.texto-main-servicio{
+    text-align: center;
+    grid-area: texto;
+}
+
+.servicio-mesadulce{
+    text-align: center;
+    grid-area: dulce;
+}
+
+.servicio-mesasalada{
+    text-align: center;
+    grid-area: salado;
+}
+
+.texto-ademas-mascositas{
+    text-align: center;
+    grid-area: texrico;
+}
+
+.servicio-mascositas-uno{
+    text-align: center;
+    grid-area: mas;
+}
+
+.servicio-mascositas-uno div h4{
+    margin-top: 15px;
+}
+
+.servicio-mascositas-dos{
+    text-align: center;
+    grid-area: masrico;
+}
+
+.servicio-mascositas-dos div h4{
+    margin-top: 15px;
+}
+
+.img-desayuno{
+    width: 300px;
+    height: 300px;
+}
+
+/*css contacto*/
+
+.titulo-contacto{
+    display: block;
+    text-align: center;
+    margin: 10px;
+    border: 3px solid #8ba9c5;
+}
+
+.contacto-cuerpo{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    column-gap: 10px;
+    margin: 2rem;
+}
+
+.contactanos-orden{
+    order: -1;
+}
+
+.contacto-lugar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contacto-lugar ul{
+    line-height: 1.5rem;
+}
+
+.contacto-lugar ul li:nth-child(3){
+    list-style: none;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.contacto-lugar ul li:nth-child(5){
+    list-style: none;
+}
+
+.contacto-lugar ul li:nth-child(7){
+    list-style: none;
+}
+
+/*footer contacto mobilefist*/
+
+.footer-contacto{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.footer-contacto .fc1{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.footer-contacto .fc2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*css queries contacto 1024*/
+
+@media screen and (min-width:1024px){
+    .contacto-cuerpo{
+        height: 50%;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+    }
+    .footer-contacto{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr;
+        margin: 10px;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+/*css queries cositas 1024*/
+
+@media screen and (min-width:1024px){
+    .seccion-cositas{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 20px 20px;
+        justify-items: center;
+        align-items: center;
+    }
 }
