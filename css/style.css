@@ -8,54 +8,61 @@
 
 .navegacion{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    background-color: #cab4c4;;
-    gap: 20px;
+    grid-template-columns: repeat(5,1fr);
     justify-items: center;
     align-items: center;
+    background-color: #cab4c4;
 }
 
-.navegacion a{
+.navegacion li a{
     text-decoration: none;
+}
+
+.navegacion li{
+    list-style: none;
 }
 
 .pasteleria{
     background-color: #cab4c4;
+    text-align: center;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 1rem;
+    padding: 1em;
 }
 
 .dulces-saladas{
     background-color: #cab4c4;
     text-align: center;
     font-family: sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .logochoux{
-    height: 110px;
-    width: 110px;
+    justify-self: center;
+    align-self: center;
+    height: 100%;
+    width: 100%;
 }
 
 .servicios{
     background-color: #cab4c4;
+    text-align: center;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .contacto{
     background-color: #cab4c4;
+    text-align: center;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
-/* css main */
+/* css index main */
 
 .presentacion{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 5px;
     margin-top: 10px;
     align-items: center;
@@ -67,9 +74,11 @@ main div p{
 }
 
 .secciones{
-    display: flex;
-    margin: 10px;
-
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1rem 1rem;
+    margin: 1rem;
 }
 
 .secciones div{
@@ -81,7 +90,22 @@ main div p{
 
 .secciones div p{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 1rem;
+}
+
+.imagenes-seccion{
+    height: 75%;
+    width: 75%;
+    object-fit: cover;
+}
+
+.seccion-cafeteria{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 10px;
 }
 
 .texto-cafe{
@@ -89,33 +113,22 @@ main div p{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 25px;
-}
-
-.foto-cafe{
-    align-items: center;
-}
-
-.imagen-cafeteria{
-    width: 400px;
-}
-
-.seccion-cafeteria{
-    display: flex;
-    gap: 15px;
-    margin: 10px;
+    gap: 0.5em;
 }
 
 .seccion-sandwicheria{
     display: flex;
-    margin-top: 20px;
-    gap: 15px;
-    margin: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    margin: 1rem;
 }
 
 .imagen-sandwicheria{
-    width: 400px;
-    height: 260px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .texto-sandwicheria{
@@ -123,7 +136,63 @@ main div p{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 25px;
+    gap: 0.5em;
+}
+
+@media screen and (min-width:1024px){
+    .logochoux{
+        justify-self: center;
+        align-self: center;
+        height: 10rem;
+        width: 10rem;
+    }
+    .secciones{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,1fr);
+        gap: 1rem 1rem;
+        margin: 1rem;
+    }
+    .imagenes-seccion{
+        height: 50%;
+        width: 75%;
+        object-fit: cover;
+    }
+    .seccion-cafeteria{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+    }
+    .texto-cafe{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 1em;
+    }
+    .foto-cafe{
+        object-fit: cover;
+        justify-self: center;
+        align-self: center;
+    }
+    .seccion-sandwicheria{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+        margin: 1rem;
+    }
+    .foto-sandwicheria{
+        object-fit: cover;
+        justify-self: center;
+        align-self: center;
+    }
+    .imagen-sandwicheria{
+        height: 15rem;
+    }
 }
 
 /* css footer */ 
@@ -132,38 +201,37 @@ footer{
     background-color: #446c95;
 }
 
-.footer-uno{
+.pie .footer-uno{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,0.2fr);
-    grid-template-areas: 
-    "footer-lista-uno footer-lista-dos mapita"
-    "footer-derechos footer-derechos footer-derechos";
-    margin: 10px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 0.5fr 1fr;
+    gap: 1rem 1rem;
+    padding: 0.5rem;
     justify-items: center;
     align-items: center;
 }
 
 .footer-lista-uno{
-    line-height: 3rem;
-    grid-area: footer-lista-uno;
+    line-height: 2rem;
     color: #cab4c4;
 }
 
 .footer-lista-dos{
-    line-height: 3rem;
-    grid-area: footer-lista-dos;
+    line-height: 2rem;
     color: #cab4c4;
-}
-
-.mapita{
-    margin: 15px;
 }
 
 .footer-derechos{
     text-align: center;
-    grid-area: footer-derechos;
     color: #cab4c4;
+}
+
+@media screen and (min-width:1024px){
+    .pie .footer-uno{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 1fr;
+    }
 }
 
 /*css html la pasteleria*/
@@ -177,8 +245,14 @@ footer{
 
 .main-pasteleria{
     display: flex;
-    margin: 30px 10px;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px;
+    gap: 5px;
+}
+
+.imagen-pasteleria{
+    width: 15rem;
 }
 
 .main-texto-pasteleria{
@@ -187,15 +261,17 @@ footer{
 
 .seccion-pasteleria-uno{
     display: flex;
-    gap: 10px;
-    margin: 30px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 20px 10px;
 }
 
 .seccion-texto-pasteleria{
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .seccion-titulo-dos{
@@ -204,15 +280,65 @@ footer{
 
 .seccion-pasteleria-dos{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,0.5fr);
+    align-items: center;
     justify-items: center;
-    column-gap: 10px;
-    margin-top: 20px;
+    row-gap: 0.5rem;
+    margin: 10px;
 }
 
 .seccion-texto-pasteleria-dos{
     text-align: center;
+}
+
+@media screen and (min-width:600px){
+    .imagen-pasteleria{
+        width: 20rem;
+    }
+    .seccion-pasteleria-dos{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,0.4fr);
+        align-items: center;
+        justify-items: center;
+        row-gap: 1rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .main-pasteleria{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 20px 10px;
+        gap: 5px;
+    }
+    .foto-pasteleria{
+        justify-self: center;
+        align-self: center;
+        object-fit: cover;
+    }
+    .seccion-pasteleria-uno{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        justify-items: center;
+        gap: 5px;
+        margin: 20px 10px;
+    }
+    .seccion-titulo-dos{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .seccion-pasteleria-dos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+        column-gap: 1em;
+        margin: 2rem;
+    }
 }
 
 /*css cositas dulces*/
@@ -243,6 +369,7 @@ main div p{
     gap: 20px 20px;
     justify-items: center;
     align-items: center;
+    margin: 1rem;
 }
 
 .seccion-cositas div{
@@ -266,60 +393,80 @@ main div p{
     border: 3px solid #8ba9c5;
 }
 
-.contenedor-principal-main{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 2fr 2fr 0.5fr 4fr;
-    grid-template-areas:
-    "texto texto"
-    "dulce dulce"
-    "salado salado"
-    "texrico texrico"
-    "mas masrico";
-    gap: 10px;
+.img-mesa-dulce{
+    display: flex;
 }
 
-.texto-main-servicio{
+.img-md1, .img-md2{
+    width: 50%;
+}
+
+.img-md3{
+    display: none;
+}
+
+.ser-mesa-dulce{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     text-align: center;
-    grid-area: texto;
+    margin: 1.5rem;
 }
 
-.servicio-mesadulce{
+.mas-sabores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+div h3{
+    margin: 1rem;
+}
+
+.mas-sabores div{
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    grid-area: dulce;
+    gap: 0.5rem;
 }
 
-.servicio-mesasalada{
-    text-align: center;
-    grid-area: salado;
+.mas-sabores div img{
+    width: 100%;
 }
 
-.texto-ademas-mascositas{
-    text-align: center;
-    grid-area: texrico;
-}
-
-.servicio-mascositas-uno{
-    text-align: center;
-    grid-area: mas;
-}
-
-.servicio-mascositas-uno div h4{
-    margin-top: 15px;
-}
-
-.servicio-mascositas-dos{
-    text-align: center;
-    grid-area: masrico;
-}
-
-.servicio-mascositas-dos div h4{
-    margin-top: 15px;
-}
-
-.img-desayuno{
-    width: 300px;
-    height: 300px;
+@media screen and (min-width:1024px){
+    .img-md3{
+        display: block;
+    }
+    .seccion-servi-dulce{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+    }
+    .img-mesa-dulce{
+        justify-content: center;
+        text-align: center;
+    }
+    .img-md1, .img-md2{
+        width: auto;
+    }
+    .mas-sabores div img{
+        width: 50%;
+        height: 50%;
+    }
+    .mas-sabores div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem;
+    }
+    .seccion-servi-salada{
+        margin-bottom: 2rem;
+    }
 }
 
 /*css contacto*/
@@ -332,16 +479,35 @@ main div p{
 }
 
 .contacto-cuerpo{
-    height: 80vh;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
-    column-gap: 10px;
     margin: 2rem;
 }
 
 .contactanos-orden{
     order: -1;
+}
+
+.contactanos-orden form .formu{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.contactanos-orden form .botones{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0.5em;
+}
+
+.contactanos-orden form .formu input{
+    width: 100%;
+}
+
+.contactanos-orden form div .arriba{
+    vertical-align: top;
 }
 
 .contacto-lugar{
