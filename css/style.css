@@ -216,6 +216,11 @@ footer{
     color: #cab4c4;
 }
 
+.footer-lista-uno li span{
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-lista-dos{
     line-height: 2rem;
     color: #cab4c4;
@@ -263,7 +268,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     margin: 20px 10px;
 }
 
